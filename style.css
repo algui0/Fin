@@ -1,0 +1,97 @@
+/*flex-grow (número): Define cuánto puede crecer el elemento para llenar el espacio disponible.
+
+flex-shrink (número): Define cuánto puede encoger el elemento cuando no hay suficiente espacio.
+
+flex-basis (valor de tamaño): Define el tamaño inicial del elemento antes de que se distribuya el espacio restante.  */
+
+.flex{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+nav ul{
+    list-style: none;      /* sin viñetas */
+    padding: 0;            /* sin padding */
+    margin: 10px;
+    display: flex;         /* menú en línea horizontal */
+    justify-content: center; /* centrado */
+    width: 100%; /* ocupa el mismo espacio que el nav*/
+    height: 100%;
+}
+
+nav li{
+    margin-right: 50px; /* espacio a la derecha de cada elemento */
+    font-size: 60px;
+    text-align: center;
+    flex-grow: 1;
+    background-image: url(ceped.jpg);
+    box-shadow: 0px 0px 0px black;
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    text-align: center;
+    background-image: url(images.jpg);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* espacio entre columnas y filas */
+  }
+  
+  .grid-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 6px solid rgb(0, 0, 0);
+  }
+
+  h3{
+    background-color: #1b8123d2;
+    font-size: 60px;
+  }
+
+  h1{
+    color: #ffffff;
+    font-size: 140px;
+  }
+
+  h2{
+    color: #ffffff;
+    font-size: 70px;
+  }
+
+  p{
+    color: #ffffff;
+    font-size: 50px;
+  }
+
+  nav a {
+    color: #ffffff;
+    font-size: 60px;
+    font-family: tahoma;
+}
+
+nav li:hover{
+    background-color: rgb(35, 116, 39);
+    color: black;
+    box-shadow: 3px 3px 20px rgb(51, 148, 75);
+    transition: 0.5s;
+}
+
+.a{
+    color: rgb(26, 112, 0);
+    font-size: 45px;
+    background-color: black;
+}
+h4{
+    background-color: #014d07d2;
+    font-size: 60px;
+    margin: 0;
+  }
